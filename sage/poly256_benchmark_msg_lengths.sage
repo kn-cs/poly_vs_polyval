@@ -1,0 +1,26 @@
+# Author: Kaushik Nath
+
+def genBenchmarkMsgLengths():
+   	
+	f = open("../test_data/poly256_benchmark_msg_lengths.txt", "w")
+	start = 256
+	stop = 51200+256
+	step = 256
+	for msgLen in range(start,stop,step):
+		for i in range(1,2):
+			f.write("%d\n"%msgLen)
+			
+	start = 64000
+	stop = 128000+256
+	step = 12800
+	for msgLen in range(start,stop,step):
+		for i in range(1,2):
+			f.write("%d\n"%msgLen)
+			
+	lst = [131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432]
+	for msgLen in lst:
+		for i in range(1,2):
+			f.write("%d\n"%msgLen)
+	f.close()
+	
+genBenchmarkMsgLengths()
