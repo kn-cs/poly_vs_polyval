@@ -96,32 +96,8 @@ int main(int argc, char **argv) {
       		t[i] = cpucycles();
       		poly256(h,m,kp,l);
    	}
-	printf("CPU-cycles per byte for computing poly256 on a message of length %llu bits: %6.4lf\n\n", msglen,((get_median())/(double)(n)));
-	
-        #if defined(__AVX512F__) && (__AVX2__) && (__AVX__)
-                v = 1;
-        #elif defined(__AVX2__) && (__AVX__)
-                v = 1;
-        #elif defined(__AVX__)
-                v = 0;
-        #endif
-   	
-   	fp = fopen("g","r");
-   	r = getline(&ptr,&len,fp);
-   	ptr[r-1] = '\0';
-   	fclose(fp);
-	
-    	c = strcmp(ptr,"1");
-      	if (c==0 && v==0) goto L;
-	
-    	for (long long i = 0;i <= TIMINGS;++i) {
-      		t[i] = cpucycles();
-      		poly256_keypowers(kp,(uint64 *)k,l);
-      		poly256(h,m,kp,l);
-   	}
-	printf("CPU-cycles per byte for computing poly256 on a message of length %llu bits including time of computing key powers: %6.4lf\n\n", msglen,((get_median())/(double)(n)));
-	
-   	L:
+	printf("CPU-cycles per byte for computing poly256 on a message of length %llu bits: %6.4lf\n\n", msglen,((get_median())/(double)(n)));	
+        
     	remove("../test_data/poly256_speed_c_output.txt");
     	remove("../test_data/poly256_speed_keyfile.txt");
     	remove("../test_data/poly256_speed_msgfile.txt");
