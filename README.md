@@ -24,6 +24,7 @@ This will disable the "Hyper-Threading" feature of the system.
 Execute the command "sudo sysctl kernel.perf_event_paranoid=2". This will set the Linux
 perf_event interface; /proc/sys/kernel/perf_event_paranoid to at most 2 as described in
 https://cpucycles.cr.yp.to/counters.html.
+
 ---
 
 ### Generate benchmarks for various message sizes
