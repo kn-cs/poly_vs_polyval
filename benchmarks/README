@@ -1,5 +1,4 @@
 Recorded benchmarks are for block sizes.
 
-The first column provides the block size, the second column provides cycles/byte for computing 
-the cryptographic primitive and the third column provides cycles/byte for computing the same 
-including time for computing the key powers.
+The first column provides the block size and the second column provides cycles/byte for computing 
+the cryptographic primitive.
