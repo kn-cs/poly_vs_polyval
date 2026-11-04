@@ -1,8 +1,8 @@
 ## Poly Versus Polyval
 
-This is the source code repository of the work **Poly Versus Polyval**, authored by [Kaushik Nath](kaushik.nath@yahoo.in) 
-& [Palash Sarkar](palash@isical.ac.in) of [Indian Statistical Institute, Kolkata, India](https://www.isical.ac.in).
-This work studies performance of the usual reduction and Montgomery reduction over binary extension fields.
+This is the source code repository of the work [Poly Versus Polyval](https://eprint.iacr.org/2026/2707.pdf), authored by 
+[Kaushik Nath](kaushik.nath@yahoo.in) & [Palash Sarkar](palash@isical.ac.in) of [Indian Statistical Institute, Kolkata, India](https://www.isical.ac.in).
+This work studies the performances of usual reduction and Montgomery reduction over binary extension fields.
 
 To report a bug or make a comment regarding the implementations please drop a mail to: [Kaushik Nath](kaushik.nath@yahoo.in).
 
